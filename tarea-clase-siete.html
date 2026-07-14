@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
 <footer>
     <nav>
-        <div>
-            <a href="./index.html" class="menu-foot-item">Empleo</a>
-            <a href="./index.html" class="menu-foot-item">Información</a>
-            <a href="./index.html" class="menu-foot-item">Asistencia</a>
-            <a href="./index.html" class="menu-foot-item">Contacto</a>
-            <a href="./index.html" class="menu-foot-item">Prensa</a>
-            <a href="./index.html" class="menu-foot-item">API</a>
-            <a href="./index.html" class="menu-foot-item">Mapa del sitio</a>
+        <div class="menu-foot-item">
+            <a href="./index.html">Empleo</a>
+            <a href="./index.html">Información</a>
+            <a href="./index.html">Asistencia</a>
+            <a href="./index.html">Contacto</a>
+            <a href="./index.html">Prensa</a>
+            <a href="./index.html">API</a>
+            <a href="./index.html">Mapa del sitio</a>
         </div>
-        <div>
-            <label for="boton-lenguaje" class="espanol-eu">Español (EU)</label>
-            <input type="radio" class="boton-lenguaje" id="boton-lenguaje" name="boton-lenguaje">
+        <div class="menu-foot-item">
+            <label for="boton-lenguaje"></label>
+            <select id="boton-lenguaje" name="boton-lenguaje-oscuro" required>
+                <option value="">English (UE)</option>
+                <option value="en">English (SEA)</option>
+                <option value="en">Español (Latino)</option>
+                <option value="en">Portugués (Brasil)</option>
+            </select>
         </div>
     </nav>
+
+    <div class="inc">
+        <span>©2026 Blizzard Entertainment, Inc.</span>
+        <span>Todas las <a href="./index.html">marcas comerciales</a> a las que se hace referencia son propiedad de sus respectivos dueños.</span>
+    </div>
+
+    <div class="redes-sociales">
+    <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://reddit.com" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
 </footer>
 </body>
 </html>
