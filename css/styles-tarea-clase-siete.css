@@ -5,9 +5,80 @@
     padding: 0;
     box-sizing: content-box;
     background-color: #131928;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .negocios {
-    height: 50vmin;
+    height: 25vmin;
     background-color: #304250;
+}
+
+.grupo-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 6vmin;
+    margin-right: 6vmin;
+}
+
+.menu-foot-item {
+    color: white;
+    font-size: 2.8vmin;
+    font-weight: 800;
+    padding: 2vmin;
+    text-decoration: none;
+}
+
+.grupo-inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 6vmin;
+    margin-right: 6vmin;
+}
+
+.logo-footer {
+    height: 12vmin;
+}
+
+.margen-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vmin;
+}
+
+.fila-legal-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30vmin;
+}
+
+.inc {
+    color: #877867;
+    font-size: 2.2vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.enlace-marcas {
+    color: #c4c6ca;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 7vmin;
+}
+
+.terminos {
+    text-decoration: none;
+    color: #b9babf;
+    font-size: 2.2vmin;
+    font-weight: 500;
+    letter-spacing: -0.05vmin;
+    padding: 1vmin 1vmin 0vmin 1vmin;
 }
