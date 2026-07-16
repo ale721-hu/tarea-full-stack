@@ -32,6 +32,26 @@ body {
     height: 4vmin;
 }
 
+.contenedor-idioma {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vmin; /* Separa la Tierra del texto */
+    border-radius: 50px;
+}
+
+.selector-idioma {
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 2.9vmin;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    padding: 0; /* Le quitamos el padding para que use el del contenedor */
+}
+
 .menu-foot-item {
     color: white;
     font-size: 2.9vmin;
@@ -58,6 +78,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-left: 6vmin;
     margin-right: 6vmin;
     transition: color 0.2s ease-in-out;
@@ -66,14 +87,15 @@ body {
 
 
 .logo-footer {
-    height: 12vmin;
+    height: 13vmin;
 }
 
 .margen-izq {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2.5vmin;
+    gap: 1.8vmin;
+
 }
 
 .fila-legal-redes {
