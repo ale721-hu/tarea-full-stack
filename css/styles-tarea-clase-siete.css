@@ -3,13 +3,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-    background-color: #131928;
+    box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
 }
 
+body {
+    background-color: #131928;
+}
+
 .negocios {
-    height: 25vmin;
+    height: 23vmin;
     background-color: #304250;
 }
 
@@ -17,25 +20,50 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-left: 6vmin;
     margin-right: 6vmin;
+    padding-top: 19.5vmin;
+    padding-bottom: 5.5vmin;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.orbe {
+    height: 4vmin;
 }
 
 .menu-foot-item {
     color: white;
-    font-size: 2.8vmin;
-    font-weight: 800;
-    padding: 2vmin;
+    font-size: 2.9vmin;
+    font-weight: 500;
+    letter-spacing: -0.13vmin;
     text-decoration: none;
+    padding-left: 1.6vmin;
+    padding-right: 1.6vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    border-radius: 0.8vmin;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menu-foot-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);     /* este es el color del hover */
+    color: #ffffff;                                  /* mantiene el color de la fuente */
 }
 
 .grupo-inferior {
+    padding-top: 5vmin;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 6vmin;
     margin-right: 6vmin;
+    transition: color 0.2s ease-in-out;
 }
+
+
 
 .logo-footer {
     height: 12vmin;
@@ -45,7 +73,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1vmin;
+    gap: 2.5vmin;
 }
 
 .fila-legal-redes {
@@ -56,7 +84,7 @@
 }
 
 .inc {
-    color: #877867;
+    color: #898b91;
     font-size: 2.2vmin;
     display: flex;
     flex-direction: column;
@@ -71,14 +99,45 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 7vmin;
+    gap: 2vmin;
+}
+
+.redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Tamaño del círculo */
+    width: 6.5vmin;
+    height: 6.5vmin;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);    /* en un blanco, con 0.08 de opacidad) */
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;    /* Transición al pasar el mouse por encima */
+}
+
+.redes-sociales a:hover {
+    background-color: rgba(255, 255, 255, 0.2);     /* Un gris más claro del hover */
+}
+
+.redes-sociales a i {
+    color: #ffffff;
+    font-size: 3vmin;                                 /* tamaño del icono interior */
 }
 
 .terminos {
     text-decoration: none;
-    color: #b9babf;
-    font-size: 2.2vmin;
+    color: #c4c6ca;
+    font-size: 2.35vmin;
     font-weight: 500;
-    letter-spacing: -0.05vmin;
-    padding: 1vmin 1vmin 0vmin 1vmin;
+    letter-spacing: -0.11vmin;
+    word-spacing: -.06vmin;
+    padding: 0.22vmin 1.8vmin 0.22vmin 1.8vmin;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.terminos:hover {
+    background-color: rgba(255, 255, 255, 0.08);    /* color del hover logrado con un translucido */
+    color:white;                                    /* la letra sigue siendo blanca */
 }
