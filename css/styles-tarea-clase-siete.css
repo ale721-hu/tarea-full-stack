@@ -59,15 +59,89 @@ body {
 }
 
 .secc-feat-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100vmin;
     background-color: white;
     border-bottom: 5px dashed black;
 }
 
+.secc-feat-art h2 {
+    font-size: 4vmin;
+    font-weight: 500;
+    letter-spacing: -0.1vmin;
+    padding-top: 3.5vmin;
+    padding-bottom: 3.5vmin;
+    padding-left: 43.8vmin;
+}
+
+.dupla-articulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.8vmin;
+    margin-bottom: 2.8vmin;
+}
+
 .tarjeta-articulo {
+    width: 60vmin;
+    height: 22vmin;
     border: 1px solid;
+    padding: 2.4vmin;
     border-color: #9b9a9a;
-    border-radius: 2vmin;
+    border-radius: 1.2vmin;
+    overflow: hidden;
+    position: relative;
+}
+
+.tarjeta-articulo a {
+    text-decoration: none;
+}
+
+.tarjeta-articulo a:hover {
+    text-decoration: underline;
+}
+
+.categoria-articulo a {
+    font-size: 2vmin;
+    color: #60656b;
+}
+.titulo-mnd a {
+    font-size: 2.7vmin;
+    letter-spacing: -0.1vmin;
+    color: #3b3b3b;
+}
+
+.resumen-articulo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 2vmin;
+    font-size: 2.1vmin;
+    line-height: 2.4vmin;
+    text-align: left;
+
+    /* El truco del recorte */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;        /* Corta en el 3er renglón */
+    overflow: hidden;             /* Oculta lo que sobra */
+    
+    color: #1d1d1d;
+}
+
+.resumen-articulo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;       /* Cubre todo el ancho del final del párrafo */
+    height: 1.5em;     /* Mide exactamente el alto de una línea de texto */
+    
+    /* Degradado que va desde transparente (izquierda) hasta blanco (derecha) */
+    background: linear-gradient(to right, transparent 60%, rgba(255, 255, 255, 1) 95%);
+    
+    pointer-events: none; /* Hace que puedas hacer clic a través de esta capa sin molestar */
 }
 
 .negocios {
