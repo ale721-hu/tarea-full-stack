@@ -17,6 +17,7 @@ body {
     padding-left: 10vmin;
     height: 50vmin;
     background-color: white;
+    white-space: pre-wrap;
 }
 
 .expansion-celeste {
@@ -92,7 +93,7 @@ body {
     border-color: #9b9a9a;
     border-radius: 1.2vmin;
     overflow: hidden;
-    position: relative;
+    position: relative;zz
 }
 
 .tarjeta-articulo a {
