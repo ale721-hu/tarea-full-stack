@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: flex-end;
     padding-left: 10vmin;
-    height: 50vmin;
+    height: 30vmin;
     background-color: white;
     white-space: pre-wrap;
 }
@@ -126,6 +126,7 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;        /* Corta en el 3er renglón */
+    line-clamp: 3; 
     overflow: hidden;             /* Oculta lo que sobra */
     
     color: #1d1d1d;
