@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Ejercicio Hostinger</title>
     <link rel="stylesheet" href="./css/styles-hos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -28,22 +28,22 @@
             <button class="hos-preguntarle">
                 <img src="./imagenes/icono-ia.png" class="hos-icono-ia">Preguntarle a la IA</button>
             <div class="hos-contenedor-idioma">            
-                <span class="fi fi-ar fis rounded-circle"></span>            
-                <select id="boton-lenguaje" class="selector-idioma" name="boton-lenguaje-oscuro" aria-label="Seleccionar idioma" required>
-                    <option value="" class="menu-foot-item">ES</option>
-                    <option value="en" class="menu-foot-item">English (UE)</option>
-                    <option value="en" class="menu-foot-item">English (SEA)</option>
-                    <option value="es" class="menu-foot-item">Español (Latino)</option>
-                    <option value="po" class="menu-foot-item">Portugués (Brasil)</option>
+                <span class="fi fi-ar fis hos-bandera"></span>            
+                <select id="boton-lenguaje" class="hos-selector-idioma" name="boton-lenguaje-oscuro" aria-label="Seleccionar idioma" required>
+                    <option value="es" class="menu-foot-item">ES</option>
+                    <option value="en" class="menu-foot-item">EN</option>
+                    <option value="po" class="menu-foot-item">PT</option>
                 </select>
             </div>
-            <span><i class="bi bi-person"></i></span>
+            <button class="hos-boton-usuario" aria-label="Cuenta de usuario">
+                <i class="bi bi-person hos-icono-usuario"></i>
+            </button>
         </div>
     </header>
 
     <section class="hos-search-y-promo">
         <form class="hos-buscador-form">    
-            <i class="fa-solid fa-magnifying-glass hos-icono-lupa"></i>              <!-- la lupa -->    
+            <i class="bi bi-search hos-icono-lupa"></i>              <!-- la lupa -->    
             <input type="search" placeholder="Encontrar un dominio" />               <!-- el input en el medio -->
             <button type="submit" class="hos-boton-buscar">Buscar</button>           <!-- el botón azul al final -->
         </form>
@@ -57,6 +57,9 @@
         <div class="hos-video-redondeado">
         <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
         </div>
+    </section>
+    <section class="hos-confianza">
+        
     </section>
 
 

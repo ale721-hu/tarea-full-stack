@@ -16,6 +16,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 15vmin;
     margin-left: 6vmin;
     margin-right: 6vmin;
 }
@@ -34,11 +35,12 @@ body {
     display: flex;
     align-items: center;            /* Centra verticalmente lupa, input y botón */
     justify-content: space-between; /* Distribuye espacio entre los elementos */
+    height: 10.5vmin;
     background-color: #ffffff;
     border-radius: 12px;
     padding: 6px 6px 6px 20px;       /* Relleno interno uniforme (arriba, derecha, abajo, izquierda) */
     flex-grow: 1;
-    max-width: 1020px;
+    max-width: 1000px;
     gap: 15px;                      /* Espacio entre lupa, input y botón */
 }
 
@@ -67,7 +69,7 @@ body {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;                
-    padding: 14px 50px;             /* Define el tamaño del botón internamente */
+    padding: 16px 56px;             /* Define el tamaño del botón internamente */
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -93,8 +95,8 @@ body {
 }
 
 .hos-dominio-gratis {
-    font-size: 2.4vmin;
-    font-weight: 500;
+    font-size: 2.7vmin;
+    font-weight: 600;
     color: white;
 }
 
@@ -106,7 +108,7 @@ body {
 
 .hos-hero-section {
     background-color: #101011;
-    height: 110vmin;
+    height: 90vmin;
 }
 
 .hos.menu-nav {
@@ -164,18 +166,120 @@ gap: 3vmin;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    gap: 2vmin;
 }
 
 .hos-preguntarle {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 2vmin;
+    font-size: 2.5vmin;
+    font-weight: 600;
+    padding: 1vmin 3vmin;
+    border-radius: 4vmin;
     background-color: black;
     color: white;
+    cursor: pointer;
+
+    /* TRUCO PARA EL BORDE CON DEGRADADO (Rosa -> Azul) */
+    border: 2px solid transparent; 
+    background-image:   linear-gradient(#000000, #000000), 
+                        linear-gradient(90deg, #e100ff, #00d2ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.hos-preguntarle:hover {
+    opacity: 0.9;
+    transform: scale(1.02);         /* Ligero efecto al pasar el mouse */
+}
+
+.hos-icono-ia {
+    width: 3.5vmin;
+}
+
+/* Contenedor de Idioma (Bandera circular + Select) */
+.hos-contenedor-idioma {
+    display: flex;
+    align-items: center;
+    gap: 10px;                       /* Espacio entre la bandera y ES */
+    padding: 8px 16px;              /* Espaciado interno para dar forma a la pastilla */
+    border-radius: 50px;            /* Forma de pastilla redondeada */
+    cursor: pointer;                /* Muestra la manito al pasar el ratón */
+    transition: background-color 0.2s ease;
+}
+/* Efecto hover del Idioma (Pastilla gris oscuro) */
+.hos-contenedor-idioma:hover {
+    background-color: #2b2b2e;      /* Color gris al poner el cursor encima */
+}
+
+/* Bandera circular */
+.hos-bandera {
+    width: 27px !important;
+    height: 27px !important;
+    border-radius: 50% !important;
+    background-size: cover !important;
+    display: inline-block;
+}
+
+/* Selector de idioma invisible/limpio sin la caja por defecto */
+.hos-selector-idioma {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    appearance: none;               /* Quita la caja rectangular nativa */
+    -webkit-appearance: none;
+}
+
+.hos-selector-idioma option {
+    background-color: #101011;      /* Fondo del desplegable */
+    color: #ffffff;
+}
+
+/* Botón e Icono de Usuario con Bootstrap Icons */
+.hos-boton-usuario {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;                    /* Ancho fijo para formar un círculo perfecto */
+    height: 46px;                   /* Alto fijo para formar un círculo perfecto */
+    border-radius: 50%;             /* Círculo perfecto */
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto hover del Usuario (Círculo gris oscuro) */
+.hos-boton-usuario:hover {
+    background-color: #2b2b2e;      /* Fondo circular gris al poner el ratón encima */
+}
+
+.hos-icono-usuario {
+    color: #ffffff;
+    font-size: 20px;                /* Tamaño del icono persona */
+}
+
+/* Icono Lupa con Bootstrap Icons */
+.hos-icono-lupa {
+    color: #6c757d;
+    font-size: 18px;
+}
 .hos-video-redondeado {
     margin-left: 6vmin;
     margin-right: 6vmin;
-    margin-top: 5vmin;
+    margin-top: 3vmin;
+}
+
+.hos-confianza {
+    height: 100vmin;
+    background-color: white;
 }
