@@ -11,15 +11,97 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-.hos-separacion-sup {
-    height: 30vmin;
-    background-color: white;
-    border-bottom: 5px dashed black;
+.hos-header-hostinger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6vmin;
+    margin-right: 6vmin;
 }
 
-.hos-separacion-inf {
-    height: 30vmin;
-    background-color: white;
+.hos-search-y-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6vmin;
+    margin-right: 6vmin;
+}
+
+/* 1. La barra contenedora */
+.hos-buscador-form {
+    display: flex;
+    align-items: center;            /* Centra verticalmente lupa, input y botón */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 6px 6px 6px 20px;       /* Relleno interno uniforme (arriba, derecha, abajo, izquierda) */
+    flex-grow: 1;
+    max-width: 1020px;
+    gap: 15px;                      /* Espacio entre lupa, input y botón */
+}
+
+/* 2. El campo de texto (toma todo el espacio del centro) */
+.hos-buscador-form input {
+    flex: 1;                        /* Toma todo el espacio sobrante automáticamente */
+    border: none;                   /* Quita borde negro/gris por defecto */
+    outline: none;                  /* Quita borde al hacer clic */
+    font-size: 16px;
+    background: transparent;
+}
+
+/* 3. La lupa */
+.hos-icono-lupa {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+
+
+
+
+/* 4. Aquí arranca el botón azul de buscar (Limpio, sin márgenes manuales) */
+.hos-boton-buscar {
+    background-color: #633bec;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;                
+    padding: 14px 50px;             /* Define el tamaño del botón internamente */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.hos-boton-buscar:hover {
+    background-color: #512bc8;
+}
+.hos-boton-buscar:active {
+    transform: scale(0.98);
+}
+/* 4. Aquí termina el botón azul de buscar (Limpio, sin márgenes manuales) */
+
+
+
+
+
+.hos-info-oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 5vmin;
+}
+
+.hos-dominio-gratis {
+    font-size: 2.4vmin;
+    font-weight: 500;
+    color: white;
+}
+
+.hos-incluido-con {
+    font-size: 2.1vmin;
+    font-weight: 300;
+    color: white;
 }
 
 .hos-hero-section {
@@ -74,15 +156,26 @@ gap: 3vmin;
     font-weight: bold;             /* Texto en negrita */
     padding: 5px 8px;              /* Relleno interno (arriba/abajo - izquierda/derecha) */
     border-radius: 6px;            /* Bordes redondeados */
-    letter-spacing: 0.5px;         /* Separación entre letras */
-    
+    letter-spacing: 0.5px;         /* Separación entre letras */    
     display: inline-block;         /* Alineación limpia sin necesidad de display: flex */    
 }
 
+.hos-bloque-derecha-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hos-preguntarle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
 .hos-video-redondeado {
-    background-color: #1e1e1e; /* Fondo oscuro */
-  border-radius: 16px;       /* Bordes redondeados */
-  overflow: hidden;          /* Recorta lo que esté adentro (videos, imágenes, etc.) */
-  max-width: 90%;          /* O un ancho relativo/porcentaje */
-  margin: 20px auto;         /* Centrado y separado de los bordes */
+    margin-left: 6vmin;
+    margin-right: 6vmin;
+    margin-top: 5vmin;
 }

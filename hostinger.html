@@ -4,33 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Blizzard entertainment</title>
+    <title>Ejercicio Hostinger</title>
     <link rel="stylesheet" href="./css/styles-hos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
 </head>
+
 <body>
+    <header class="hos-header-hostinger">
+        <nav class="hos-menu-nav">
+            <div class="hos-logo-hos">
+                <img src="./imagenes/h-de-hostinger.png" class="hos-h-de-hostinger-logo">
+                <img src="./imagenes/hostinger-de-hostinger.png" class="hos-de-hostinger-logo">
+            </div>
+            <ul class="hos-menu-nav">
+                <li><a href="./index.html" class="hos-menu-item">Precios</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Servicios</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Explorar</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Ecommerce</a></li>
+                <li><span class="hos-menu-novedad">NOVEDAD</span></li>
+            </ul>
+        </nav>
+        <div class="hos-bloque-derecha-header">
+            <button class="hos-preguntarle">
+                <img src="./imagenes/icono-ia.png" class="hos-icono-ia">Preguntarle a la IA</button>
+            <div class="hos-contenedor-idioma">            
+                <span class="fi fi-ar fis rounded-circle"></span>            
+                <select id="boton-lenguaje" class="selector-idioma" name="boton-lenguaje-oscuro" aria-label="Seleccionar idioma" required>
+                    <option value="" class="menu-foot-item">ES</option>
+                    <option value="en" class="menu-foot-item">English (UE)</option>
+                    <option value="en" class="menu-foot-item">English (SEA)</option>
+                    <option value="es" class="menu-foot-item">Español (Latino)</option>
+                    <option value="po" class="menu-foot-item">Portugués (Brasil)</option>
+                </select>
+            </div>
+            <span><i class="bi bi-person"></i></span>
+        </div>
+    </header>
 
-<nav class="hos-menu-nav">
-    <div class="hos-logo-hos">
-        <img src="./imagenes/h-de-hostinger.png" class="hos-h-de-hostinger-logo">
-        <img src="./imagenes/hostinger-de-hostinger.png" class="hos-de-hostinger-logo">
-    </div>
-    <ul class="hos-menu-nav">
-        <li><a href="./index.html" class="hos-menu-item">Precios</a></li>
-        <li><a href="./index.html" class="hos-menu-item">Servicios</a></li>
-        <li><a href="./index.html" class="hos-menu-item">Explorar</a></li>
-        <li><a href="./index.html" class="hos-menu-item">Ecommerce</a></li>
-        <li><span class="hos-menu-novedad">NOVEDAD</span></li>
-    </ul>
-</nav>
+    <section class="hos-search-y-promo">
+        <form class="hos-buscador-form">    
+            <i class="fa-solid fa-magnifying-glass hos-icono-lupa"></i>              <!-- la lupa -->    
+            <input type="search" placeholder="Encontrar un dominio" />               <!-- el input en el medio -->
+            <button type="submit" class="hos-boton-buscar">Buscar</button>           <!-- el botón azul al final -->
+        </form>
+        <div class="hos-info-oferta">                                     <!-- Texto informativo / Oferta -->
+            <span class="hos-dominio-gratis">Dominio gratis por 1 año</span>
+            <span class="hos-incluido-con">incluido con los <a href="/planes">planes anuales</a></span>
+        </div>
+    </section>
 
-<section class="hos-search-y-promo">
-</section>
-
-<section class="hos-hero-section">
-    <div class="hos-video-redondeado">
-    <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
-    </div>
-</section>
+    <section class="hos-hero-section">
+        <div class="hos-video-redondeado">
+        <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
+        </div>
+    </section>
 
 
 
