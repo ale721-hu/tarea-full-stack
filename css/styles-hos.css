@@ -107,8 +107,8 @@ body {
 }
 
 .hos-hero-section {
+    position: relative;
     background-color: #101011;
-    height: 90vmin;
 }
 
 .hos.menu-nav {
@@ -273,10 +273,31 @@ gap: 3vmin;
     color: #6c757d;
     font-size: 18px;
 }
-.hos-video-redondeado {
-    margin-left: 6vmin;
-    margin-right: 6vmin;
+
+
+/* Este estilo lo estoy aplicandoa a un <div>. Un <div> es un elemento inline por defecto; border-radius: 3vmin
+se lo estoy al <div>; el <div> es el que se redondea;El video que está adentro sigue siendo un rectángulo
+perfectamente cuadrado y con esquinas filosas. */
+.hos-video-redondeado {                     
     margin-top: 3vmin;
+    margin-right: 6vmin;
+    margin-bottom: 3vmin;
+    margin-left: 6vmin;
+    border-radius: 3vmin;
+    overflow: hidden;                       /* Le dice: lo que se desborde ------> RECORTALO */
+}
+
+
+
+/* Regla para el video propiamente dicho */
+/* 1. Al ser block este elemento es UNICO EN LA FILA; no comparte espacio con nadie más */
+/* 2. Hace que el video (o una imagen) rellene por completo todo el espacio de su contenedor sin deformarse
+(sin estirarse ni aplastarse). */
+.hos-video-redondeado video {               
+    display: block;  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                      
 }
 
 .hos-confianza {
@@ -285,9 +306,15 @@ gap: 3vmin;
 }
 
 .hos-hero-mensaje {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    padding-left: 13vmin;
+    padding-top: 10vmin;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     gap: 2vmin;
 }
 
@@ -309,13 +336,15 @@ gap: 3vmin;
     color: white;
 }
 
+
+
 /* 5. Aquí arranca el botón blanco "Empezar ya", el <anchor> que se comoprta como botón */
 .hos-boton-empezar-ya {
-    display: inline-flex;       /* O inline-block */
-    justify-content: center;   /* Centra el texto adentro */
-    align-items: center;       /* Centra verticalmente */
+    display: inline-flex;      
+    justify-content: center;   
+    align-items: center;     
     align-self: flex-start;
-    padding: 15px 30px;             /* Define el tamaño del botón internamente */
+    padding: 15px 30px;             
     background-color: white;
     color: black;
     border-radius: 8px;
@@ -337,7 +366,6 @@ gap: 3vmin;
 /* 5. Aquí finaliza el botón blanco "Empezar ya", el <anchor> que se comoprta como botón */
 
 
-
 .hos-linea-escudo {
     display: flex;
     flex-direction: row;
@@ -350,4 +378,36 @@ gap: 3vmin;
     color: white;
     font-size: 2.5vmin;
     font-weight: bold
+}
+
+.hos-checkbox-pulsador {
+    display: none;
+}
+
+.hos-kodee {
+    position: fixed;
+    z-index: 15;   
+    bottom: 2vmin;   /* <-- POSICIONAMIENTO del fixed en vertical */
+    right: 2vmin;    /* <-- POSICIONAMIENTO del fixed en horizontal */ 
+    width: 74vmin;
+    height: 83vmin;
+    border-radius: 2vmin;
+    border: 1px solid;
+    border-color: grey;
+    background-color: whitesmoke;
+    display: none /* Hace que el kodee arranque oculto */
+}
+
+.hos-checkbox-pulsador:checked ~ .hos-kodee {    /* Cuando el checkbox se marca, entonces mostramos Kodee */
+    display: block; 
+}
+
+.hos-titulo-kodee {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vmin;
+    padding-left: 3vmin;
+    padding-top: 1vmin;
 }

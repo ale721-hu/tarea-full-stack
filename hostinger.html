@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <input type="checkbox" id="pulsador-kodee" class="hos-checkbox-pulsador">  <!-- 1. EL INTERRUPTOR INVISIBLE (Justo al inicio del body) -->
     <header class="hos-header-hostinger">
         <nav class="hos-menu-nav">
             <div class="hos-logo-hos">
@@ -25,8 +26,8 @@
             </ul>
         </nav>
         <div class="hos-bloque-derecha-header">
-            <button class="hos-preguntarle">
-                <img src="./imagenes/icono-ia.png" class="hos-icono-ia">Preguntarle a la IA</button>
+            <label for="pulsador-kodee" class="hos-preguntarle">
+                <img src="./imagenes/icono-ia.png" class="hos-icono-ia">Preguntarle a la IA</label>
             <div class="hos-contenedor-idioma">            
                 <span class="fi fi-ar fis hos-bandera"></span>            
                 <select id="boton-lenguaje" class="hos-selector-idioma" name="boton-lenguaje-oscuro" aria-label="Seleccionar idioma" required>
@@ -57,8 +58,8 @@
 
 
 
-    <section class="hos-hero-section">
-        <div class="hos-hero-mensaje">
+    <section class="hos-hero-section">           <!-- este es papá -->
+        <div class="hos-hero-mensaje">           <!-- este es el hermanito (el texto) que va a upa arriba del video -->
             <h1 class="hos-estilo-hero-texto">
                 <span>Tu éxito online</span>
                 <span>empieza acá</span>
@@ -70,13 +71,11 @@
             <a href="https://www.hostinger.com/ar#pricing" class="hos-boton-empezar-ya">Empezar ya</a>
             <div class="hos-linea-escudo">
                 <i class="bi bi-shield-check hos-icono-escudo"></i>
-                <p>Tenés 30 días de garantía de devolución</p>
+                <p class="hos-hero-explicacion">Tenés 30 días de garantía de devolución</p>
             </div>
         </div>
-
-
-        <div class="hos-video-redondeado">
-        <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
+        <div class="hos-video-redondeado">       <!-- y este es el hermanito que va a abajo (el video) -->
+                <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
         </div>
     </section>
 
@@ -92,7 +91,9 @@
 
 
 
-
+<div class="hos-kodee">
+    <p class="hos-titulo-kodee"><img src="./imagenes/icono-ia-negro.png" class="hos-icono-ia">Kodee</p>
+</div>
 
 
 </body>
