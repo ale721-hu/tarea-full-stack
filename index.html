@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio Hostinger</title>
+    <link rel="stylesheet" href="./css/styles-hos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    
+    <input type="checkbox" id="pulsador-kodee" class="hos-checkbox-pulsador">  <!-- 1. EL INTERRUPTOR INVISIBLE (Justo al inicio del body) -->
+    <header class="hos-header-hostinger">
+        <nav class="hos-menu-nav">
+            <div class="hos-logo-hos">
+                <img src="./imagenes/h-de-hostinger.png" class="hos-h-de-hostinger-logo">
+                <img src="./imagenes/hostinger-de-hostinger.png" class="hos-de-hostinger-logo">
+            </div>
+            <ul class="hos-menu-nav">
+                <li><a href="./index.html" class="hos-menu-item">Precios</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Servicios</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Explorar</a></li>
+                <li><a href="./index.html" class="hos-menu-item">Ecommerce</a></li>
+                <li><span class="hos-menu-novedad">NOVEDAD</span></li>
+            </ul>
+        </nav>
+        <div class="hos-bloque-derecha-header">
+            <label for="pulsador-kodee" class="hos-preguntarle">
+                <img src="./imagenes/icono-ia.png" class="hos-icono-ia">Preguntarle a la IA</label>
+            <div class="hos-contenedor-idioma">            
+                <span class="fi fi-ar fis hos-bandera"></span>            
+                <select id="boton-lenguaje" class="hos-selector-idioma" name="boton-lenguaje-oscuro" aria-label="Seleccionar idioma" required>
+                    <option value="es" class="menu-foot-item">ES</option>
+                    <option value="en" class="menu-foot-item">EN</option>
+                    <option value="po" class="menu-foot-item">PT</option>
+                </select>
+            </div>
+            <button class="hos-boton-usuario" aria-label="Cuenta de usuario">
+                <i class="bi bi-person hos-icono-usuario"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hos-search-y-promo">
+        <form class="hos-buscador-form">    
+            <i class="bi bi-search hos-icono-lupa"></i>              <!-- la lupa -->    
+            <input type="search" placeholder="Encontrar un dominio" />               <!-- el input en el medio -->
+            <button type="submit" class="hos-boton-buscar">Buscar</button>           <!-- el botón azul al final -->
+        </form>
+        <div class="hos-info-oferta">                                     <!-- Texto informativo / Oferta -->
+            <span class="hos-dominio-gratis">Dominio gratis por 1 año</span>
+            <span class="hos-incluido-con">incluido con los <a href="/planes">planes anuales</a></span>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="hos-hero-section">           <!-- este es papá -->
+        <div class="hos-hero-mensaje">           <!-- este es el hermanito (el texto) que va a upa arriba del video -->
+            <h1 class="hos-estilo-hero-texto">
+                <span>Tu éxito online</span>
+                <span>empieza acá</span>
+            </h1>
+            <p class="hos-hero-explicacion">
+                <span>En Hostinger obtenés todo lo necesario. Desde armar tu web hasta</span>
+                <span>hacer crecer tu proyecto.</span>
+            </p>
+            <a href="https://www.hostinger.com/ar#pricing" class="hos-boton-empezar-ya">Empezar ya</a>
+            <div class="hos-linea-escudo">
+                <i class="bi bi-shield-check hos-icono-escudo"></i>
+                <p class="hos-hero-explicacion">Tenés 30 días de garantía de devolución</p>
+            </div>
+        </div>
+        <div class="hos-video-redondeado">       <!-- y este es el hermanito que va a abajo (el video) -->
+                <video src="./videos/hero-video-hos.mp4" width="100%" autoplay muted loop></video>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="hos-confianza">
+        
+    </section>
+
+
+
+<div class="hos-kodee">
+    <p class="hos-titulo-kodee"><img src="./imagenes/icono-ia-negro.png" class="hos-icono-ia">Kodee</p>
+</div>
+
+
 </body>
 </html>
